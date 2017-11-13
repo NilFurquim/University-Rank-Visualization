@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trabalho 4</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript" src="d3-star-plot-0.0.2.min.js"></script>
+	</head>
+	<style>
+	body {
+	  width: 960px;
+	  font-family: Arial;
+	}
+	.yaxis .xaxis {
+	  stroke-width: 1px;
+	}
+	.wrapper {
+	  position: absolute;
+	}
+	.chart {
+	  margin-bottom: 40px;
+	}
+	.star-title {
+	  font-size: 12px;
+	}
+	.star-label {
+	  font-size: 11px;
+	  pointer-events: none;
+	}
+	.star-origin {
+	  fill: #333;
+	}
+	.star-axis {
+	  stroke: black;
+	  stroke-width: 0.5px;
+	  /*stroke-dasharray: 4 5;*/
+	}
+	.star-path {
+	  stroke: #444;
+	  stroke-width: 1px;
+	  fill: #709CB1;
+	  fill-opacity: 0.3;
+	}
+	.star-middle {
+	  fill: transparent;
+	}
+	</style>
+	<body>
+    <a href="index.html">Go back</a>
+		<div id="legend">
+				<p>%In: Pertage of international students.</p>
+				<p>%Fe: Pertage of female students.</p>
+				<p>Tch: Teaching Rating.</p>
+				<p>Rch: Research Rating.</p>
+				<p>Cit: Citation Rating.</p>
+				<p>IOR: Internation Outlook Rating.</p>
+				<p>IIR: Industry Income Rating.</p>
+		</div>
+		<div id="target"></div>
+		<script type="text/javascript" src="UniversityRankingD3Plot.js"></script>
+	</body>
+</html>
